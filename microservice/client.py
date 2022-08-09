@@ -13,8 +13,7 @@ def run_client(data):
         # Socket to talk to server
         # print("Connecting to server(receiver) …")
         socket = context.socket(zmq.REQ)
-        # socket.connect("tcp://localhost:5555")
-        socket.connect("tcp://192.168.86.30:5555")
+        socket.connect("tcp://localhost:5555")
 
         # send a message
         # data = "7"
